@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Rita Cruz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d888b43a38.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="info-container">
+          <div class="info">
+            <div class="picture"></div>
+            <div class="header-text">
+              <h1>Hi, I'm <span>Rita</span>.</h1>
+              <p>I'm a self-taught Front-end developer.</p>
+              <a href="./images/Rita Cruz CV.pdf" download class="portfolio-btn">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Tools----------------------------->
+    <div id="tools">
+      <div class="container">
+        <h1 class="sub-title">Tools</h1>
+        <div class="tools-list">
+          <div>
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-css3-alt"></i>
+            <h2>CSS</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-js"></i>
+            <h2>JavaScript</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+          </div>
+          <div>
+            <i class="fa-brands fa-bootstrap"></i>
+            <h2>Bootstrap</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------About-------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/Picture.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              I studied Tourism but from an early age I've been very curious about programming.
+              <br>
+              When I lost my previous job during the pandemic, I decided to dedicate my free time to finally learn programming and ended up discovering a new interest. 🪴
+              <br>
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>English | Spanish | French </span><br />
+                  Tour Guide and Customer Service
+                <li>
+                  <span>Communication | Teamwork </span><br />
+                  Professional Experience
+                  <br>
+                </li>
+                <li>
+                  <span>Soft Skills</span>
+                  <br />
+                  Customer Service Training
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2020 - 2021</span><br /> 
+                  Concentrix - Customer Service
+                </li>
+                <li>
+                  <span>2018 - 2020</span><br /> Airbnb - Customer Service
+                </li>
+                <li>
+                  <span>2015 - 2018</span>
+                  <br />
+                  Palácio da
+                    Bolsa - Tour Guide 
+                </li>
+                <li>
+                  <span>2014 - 2015</span><br />
+                  Portuguese
+                    Beauty - Shop Assistant
+                </li>
+                <li>
+                  <span>2013 - 2013</span><br />
+                  Trainee -  Mosteiro da Serra do Pilar - Tour Guide 
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2021</span><br />
+                  IEFP
+                  - Front-end Developer
+                  <br>
+                 Scrimba
+                  - Front-end Developer
+                  <br>
+                  CodeCademy
+                  - JavaScript
+                  <br>
+                  FreeCodeCamp
+                  - Front-end Developer
+                </li>
+                <li>
+                  <span>2021</span><br />
+                  CECOA
+                   - Portuguese Sign Language
+                </li>
+                <li>
+                  <span>2019</span><br />
+                  CECOA
+                  - Digital Marketing
+                </li>
+                <li>
+                  <span>2013</span><br />
+                  Escola Básica e Secundária de Canelas
+                  - Professional Course Tourism Technician
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------Portfolio------------------ -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/meme-generator.jpg" />
+            <div class="layer">
+              <h3>React 
+                <br>
+                Meme Generator</h3>
+              <p>
+                This project is a part of a React Course.
+                <br>
+                It's the first dinamic website I created with React, it has challenges to complete the project.
+                <br>
+                Images are obtained through an API.
+              </p>
+              <div class="links">
+                <a href="https://r-meme-generator.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/RitaCr23/meme-generator-react" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/travel-journal.jpg" />
+            <div class="layer">
+              <h3>React - Travel Journal</h3>
+              <p>
+                Solo project that's part of a React Course.
+                <br>
+                At the end of every module, there's a solo project to practise all the concepts that were taught.
+                Every solo project has a list of features that need to be on the project, and a Figma design to replicate.
+              </p>
+              <div class="links">
+                <a href="https://r-travel-journal.netlify.app/" target="_blank" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href="https://github.com/RitaCr23/react-travel-journal" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/e-commerce.png" />
+            <div class="layer">
+              <h3>React - E-commerce Page</h3>
+              <p>
+                This project is part of a React Advanced Course.
+                <br>
+                This is my most recent project, it has two pages and I'd like to come back to it to add further functionality and other improvements.
+              </p>
+              <div class="links">
+                <a href="https://github.com/RitaCr23/e-commerce-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/RitaCr23" target="_blank" class="btn">More projects <i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+    <!-- -------------------Contact -------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact</h1>
+            <p><i class="fa-solid fa-envelope"></i></i> anaritacruz93@gmail.com</p>
+            <p><i class="fa-brands fa-github"></i><a href="https://github.com/RitaCr23">Github</a></p>
+            <p>
+              <i class="fa-brands fa-linkedin"></i
+                ><a href="https://www.linkedin.com/in/ritacruz93/">Linkedin</a>
+            </p>
+            <a href="./images/Rita Cruz CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <button type="Submit" class="btn btn2" value="Submit">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright @ Rita Cruz. Made with <i class="fa-solid fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxl4snZHB765Q7-YOsVVONp1UPPVsdYeGSH50GVKgNVYKXD8n7uiTOjnGuDIQMCWAhxNg/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent! ♡";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
